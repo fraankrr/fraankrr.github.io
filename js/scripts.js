@@ -57,3 +57,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+document.getElementById("currenttime").innerHTML = Date.now()
+setInterval(() => {
+    document.getElementById("currenttime").innerHTML = Date.now()
+}, 1000);
