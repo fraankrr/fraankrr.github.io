@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-document.getElementById("currenttime").innerHTML = Date.now()
+document.getElementById("currenttime").innerHTML = moment().format("DD.MM.YYYY hh:mm:ss");
 setInterval(() => {
-    document.getElementById("currenttime").innerHTML = Date.now()
+    document.getElementById("currenttime").innerHTML = moment().format("DD.MM.YYYY hh:mm:ss");
 }, 1000);
